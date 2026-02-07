@@ -62,7 +62,7 @@ export default function Contact() {
               <i className="bx bxl-whatsapp contact-card-icon contact-card-whatsapp"></i>
 
               <h3 className="contact-card-title">Whatsapp</h3>
-              <span className="contact-card-data">+91-7668388773</span>
+              <span className="contact-card-data">+91-7488388773</span>
 
               <a
                 href="https://api.whatsapp.com/send?phone=917488388773&text=Hello,more information!"
