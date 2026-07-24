@@ -41,7 +41,7 @@ function Education() {
                                 <div className="education-calender">
                                     <i className="uil uil-calendar-alt"></i>2022-2026
                                 </div>
-                                <div className="education-grade">CGPA: 7.53/10</div>
+                                <div className="education-grade">CGPA: 7.57/10</div>
                             </div>
                         </div>
                     </div>
