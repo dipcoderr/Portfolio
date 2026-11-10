@@ -24,11 +24,13 @@ const ProjectCard = ({project, centered}) => {
             options={tiltOptions}
           >
             <div className="tilt-card-content">
-              {/* Logo badge for AI/no-image cards */}
-              {hasLogo && (
+              {/* Logo or spacer — keeps name vertically centered on all cards */}
+              {hasLogo ? (
                 <div className="tilt-card-logo-wrap">
                   <img src={project.logo} alt={`${project.name} logo`} className="tilt-card-logo" />
                 </div>
+              ) : (
+                <div className="tilt-card-spacer" />
               )}
               <h2>{project.name}</h2>
               <div className="button-container">

@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     height: 100%;
     text-align: center;
     padding: 1.5rem;
@@ -36,9 +36,15 @@
 
 .tilt-card-content h2 {
     font-size: 1.3rem;
-    margin-bottom: auto;
-    margin-top: auto;
     line-height: 1.3;
+    margin: auto 0;
+}
+
+/* Invisible spacer same height as logo-wrap so name stays centered on image cards */
+.tilt-card-spacer {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
 }
 
 .project-summary {
