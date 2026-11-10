@@ -21,26 +21,34 @@
     grid-column: span 2;
 }
 
+.backend-skills {
+    grid-column: span 2;
+}
+
 .languages-skills .skills-box,
-.ai-skills .skills-box {
+.ai-skills .skills-box,
+.backend-skills .skills-box {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
 }
 
 .languages-skills .skills-group,
-.ai-skills .skills-group {
+.ai-skills .skills-group,
+.backend-skills .skills-group {
     display: contents;
 }
 
 .languages-skills .skills-data,
-.ai-skills .skills-data {
+.ai-skills .skills-data,
+.backend-skills .skills-data {
     justify-content: center;
     align-items: flex-start;
 }
 
 .languages-skills .skills-data>div,
-.ai-skills .skills-data>div {
+.ai-skills .skills-data>div,
+.backend-skills .skills-data>div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -227,18 +235,21 @@
     }
 
     .languages-skills,
-    .ai-skills {
+    .ai-skills,
+    .backend-skills {
         grid-column: auto;
     }
 
     .languages-skills .skills-box,
-    .ai-skills .skills-box {
+    .ai-skills .skills-box,
+    .backend-skills .skills-box {
         display: flex;
         gap: 1rem;
     }
 
     .languages-skills .skills-group,
-    .ai-skills .skills-group {
+    .ai-skills .skills-group,
+    .backend-skills .skills-group {
         display: grid;
     }
 }

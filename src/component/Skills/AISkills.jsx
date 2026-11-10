@@ -1,10 +1,10 @@
 import { Tilt } from "react-tilt";
-import generativeAI from "../../assets/generative-ai.png";
+import generativeAI from "../../assets/ai-agents.jpg";
 import langgraph from "../../assets/langgraph.png";
 import langchain from "../../assets/langchain.png";
 import rag from "../../assets/rag.png";
 import agenticAI from "../../assets/agentic-ai.jpg";
-import aiAgents from "../../assets/ai-agents.jpg";
+import aiAgents from "../../assets/generative-ai.png";
 import claude from "../../assets/Claude.webp";
 import ollama from "../../assets/ollama.png";
 
