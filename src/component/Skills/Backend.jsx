@@ -6,7 +6,7 @@ import fastapi from "../../assets/fastapi.png";
 import mongodb from "../../assets/mongodb.png";
 import mysql from "../../assets/mysql.png";
 import postgresql from "../../assets/postgresql.jpg";
-import java from "../../assets/java.png";
+import java from "../../assets/Java.jpg";
 
 const Backend = () => {
     const tiltOptions = { max: 45, scale: 1, speed: 750 };
