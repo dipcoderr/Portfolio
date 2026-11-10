@@ -1,48 +1,65 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
-    <!-- Main gradient - vibrant red -->
-    <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#ff1744;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#d50000;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#c62828;stop-opacity:1" />
+    <!-- Deep dark background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
     </linearGradient>
-    
-    <!-- Shine effect -->
-    <radialGradient id="shine" cx="30%" cy="30%">
-      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
-      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
-    </radialGradient>
-    
-    <!-- Shadow filter -->
-    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
-      <feOffset dx="0" dy="2" result="offsetblur"/>
-      <feComponentTransfer>
-        <feFuncA type="linear" slope="0.3"/>
-      </feComponentTransfer>
+
+    <!-- Electric accent gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e63946"/>
+      <stop offset="50%" style="stop-color:#c1121f"/>
+      <stop offset="100%" style="stop-color:#ff4d6d"/>
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur"/>
       <feMerge>
-        <feMergeNode/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+
+    <!-- Sharp shadow -->
+    <filter id="shadow">
+      <feDropShadow dx="1" dy="1" stdDeviation="1" flood-color="#e63946" flood-opacity="0.6"/>
+    </filter>
   </defs>
-  
-  <!-- Outer glow -->
-  <circle cx="50" cy="50" r="49" fill="none" stroke="#ff1744" stroke-width="2" opacity="0.3" />
-  
-  <!-- Background circle with gradient -->
-  <circle cx="50" cy="50" r="46" fill="url(#redGradient)" />
-  
-  <!-- Shine overlay -->
-  <circle cx="50" cy="50" r="46" fill="url(#shine)" />
-  
-  <!-- Letter D with shadow -->
-  <text x="50" y="72" font-family="'Segoe UI', Arial, sans-serif" font-size="58" font-weight="900" fill="white" text-anchor="middle" filter="url(#shadow)" style="letter-spacing: -2px;">D</text>
-  
-  <!-- Stylish accent elements -->
-  <circle cx="78" cy="22" r="6" fill="#ffeb3b" opacity="0.9" />
-  <circle cx="78" cy="22" r="3" fill="#fff" opacity="0.6" />
-  
-  <!-- Bottom accent line -->
-  <path d="M 30 85 Q 50 88 70 85" stroke="#ff5252" stroke-width="2" fill="none" opacity="0.5" stroke-linecap="round"/>
+
+  <!-- Background -->
+  <rect width="100" height="100" rx="18" fill="url(#bgGrad)"/>
+
+  <!-- Top-left corner accent -->
+  <line x1="8" y1="8" x2="22" y2="8" stroke="#e63946" stroke-width="2.5" stroke-linecap="round" filter="url(#glow)"/>
+  <line x1="8" y1="8" x2="8" y2="22" stroke="#e63946" stroke-width="2.5" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- Bottom-right corner accent -->
+  <line x1="92" y1="92" x2="78" y2="92" stroke="#e63946" stroke-width="2.5" stroke-linecap="round" filter="url(#glow)"/>
+  <line x1="92" y1="92" x2="92" y2="78" stroke="#e63946" stroke-width="2.5" stroke-linecap="round" filter="url(#glow)"/>
+
+  <!-- Subtle grid lines -->
+  <line x1="0" y1="50" x2="100" y2="50" stroke="#ffffff" stroke-width="0.3" opacity="0.05"/>
+  <line x1="50" y1="0" x2="50" y2="100" stroke="#ffffff" stroke-width="0.3" opacity="0.05"/>
+
+  <!-- Letter D — bold, sharp, with red left bar -->
+  <rect x="22" y="22" width="5" height="56" rx="2" fill="url(#accentGrad)" filter="url(#glow)"/>
+
+  <!-- D curve path -->
+  <path d="M27 22 L46 22 Q72 22 72 50 Q72 78 46 78 L27 78 Z"
+        fill="none"
+        stroke="url(#accentGrad)"
+        stroke-width="5"
+        stroke-linejoin="round"
+        filter="url(#shadow)"/>
+
+  <!-- Inner D fill (dark) -->
+  <path d="M32 30 L44 30 Q62 30 62 50 Q62 70 44 70 L32 70 Z"
+        fill="#0d0d1a"/>
+
+  <!-- Red dot accent top-right -->
+  <circle cx="80" cy="20" r="4" fill="#e63946" filter="url(#glow)"/>
+  <circle cx="80" cy="20" r="2" fill="#ff4d6d"/>
 </svg>
