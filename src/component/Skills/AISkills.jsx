@@ -1,4 +1,10 @@
 import { Tilt } from "react-tilt";
+import generativeAI from "../../assets/generative-ai.png";
+import langgraph from "../../assets/langgraph.png";
+import langchain from "../../assets/langchain.png";
+import rag from "../../assets/rag.png";
+import agenticAI from "../../assets/agentic-ai.jpg";
+import aiAgents from "../../assets/ai-agents.jpg";
 
 const AISkills = () => {
     const tiltOptions = {
@@ -15,21 +21,21 @@ const AISkills = () => {
                 <div className="skills-group">
                     <div className="skills-data">
                         <div>
-                            <i className="bx bx-brain skills-icon ai"></i>
+                            <img src={generativeAI} alt="Generative AI" className="skills-img skills-img-generative-ai" />
                             <h3 className="skills-name">Generative AI</h3>
                         </div>
                     </div>
 
                     <div className="skills-data">
                         <div>
-                            <i className="bx bx-link-alt skills-icon ai"></i>
+                            <img src={langchain} alt="LangChain" className="skills-img skills-img-langchain" />
                             <h3 className="skills-name">LangChain</h3>
                         </div>
                     </div>
 
                     <div className="skills-data">
                         <div>
-                            <i className="bx bx-git-branch skills-icon ai"></i>
+                            <img src={langgraph} alt="LangGraph" className="skills-img skills-img-langgraph" />
                             <h3 className="skills-name">LangGraph</h3>
                         </div>
                     </div>
@@ -38,21 +44,21 @@ const AISkills = () => {
                 <div className="skills-group">
                     <div className="skills-data">
                         <div>
-                            <i className="bx bx-search-alt skills-icon ai"></i>
+                            <img src={rag} alt="RAG" className="skills-img skills-img-rag" />
                             <h3 className="skills-name">RAG</h3>
                         </div>
                     </div>
 
                     <div className="skills-data">
                         <div>
-                            <i className="bx bx-bot skills-icon ai"></i>
+                            <img src={agenticAI} alt="Agentic AI" className="skills-img skills-img-agentic-ai" />
                             <h3 className="skills-name">Agentic AI</h3>
                         </div>
                     </div>
 
                     <div className="skills-data">
                         <div>
-                            <i className="bx bx-bot skills-icon ai"></i>
+                            <img src={aiAgents} alt="AI Agents" className="skills-img skills-img-agents" />
                             <h3 className="skills-name">AI Agents</h3>
                         </div>
                     </div>
