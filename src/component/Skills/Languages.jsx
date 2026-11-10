@@ -3,6 +3,7 @@ import python from "../../assets/python.png";
 import cpp from "../../assets/c++.jpg";
 import dbms from "../../assets/dbms.png";
 import computerNetworks from "../../assets/computer-network.jpg";
+import os from "../../assets/operating system.png";
 
 const Languages = () => {
     const tiltOptions = { max: 45, scale: 1, speed: 750 };
@@ -66,7 +67,7 @@ const Languages = () => {
 
                     <div className="skills-data">
                         <div>
-                            <i className="bx bx-layer skills-icon os"></i>
+                            <img src={os} alt="Operating System" className="skills-img" />
                             <h3 className="skills-name">OS</h3>
                         </div>
                     </div>
