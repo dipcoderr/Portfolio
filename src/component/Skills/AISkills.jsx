@@ -5,13 +5,11 @@ import langchain from "../../assets/langchain.png";
 import rag from "../../assets/rag.png";
 import agenticAI from "../../assets/agentic-ai.jpg";
 import aiAgents from "../../assets/ai-agents.jpg";
+import claude from "../../assets/Claude.webp";
+import ollama from "../../assets/ollama.png";
 
 const AISkills = () => {
-    const tiltOptions = {
-        max: 45,
-        scale: 1,
-        speed: 750
-    };
+    const tiltOptions = { max: 45, scale: 1, speed: 750 };
 
     return (
         <Tilt className="skills-content ai-skills" options={tiltOptions}>
@@ -22,7 +20,7 @@ const AISkills = () => {
                     <div className="skills-data">
                         <div>
                             <img src={generativeAI} alt="Generative AI" className="skills-img skills-img-generative-ai" />
-                            <h3 className="skills-name">Generative AI</h3>
+                            <h3 className="skills-name">GenAI</h3>
                         </div>
                     </div>
 
@@ -39,16 +37,16 @@ const AISkills = () => {
                             <h3 className="skills-name">LangGraph</h3>
                         </div>
                     </div>
-                </div>
 
-                <div className="skills-group">
                     <div className="skills-data">
                         <div>
                             <img src={rag} alt="RAG" className="skills-img skills-img-rag" />
                             <h3 className="skills-name">RAG</h3>
                         </div>
                     </div>
+                </div>
 
+                <div className="skills-group">
                     <div className="skills-data">
                         <div>
                             <img src={agenticAI} alt="Agentic AI" className="skills-img skills-img-agentic-ai" />
@@ -60,6 +58,20 @@ const AISkills = () => {
                         <div>
                             <img src={aiAgents} alt="AI Agents" className="skills-img skills-img-agents" />
                             <h3 className="skills-name">AI Agents</h3>
+                        </div>
+                    </div>
+
+                    <div className="skills-data">
+                        <div>
+                            <img src={claude} alt="Claude" className="skills-img skills-img-claude" />
+                            <h3 className="skills-name">Claude</h3>
+                        </div>
+                    </div>
+
+                    <div className="skills-data">
+                        <div>
+                            <img src={ollama} alt="Ollama" className="skills-img skills-img-ollama" />
+                            <h3 className="skills-name">Ollama</h3>
                         </div>
                     </div>
                 </div>

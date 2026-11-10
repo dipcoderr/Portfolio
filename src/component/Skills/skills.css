@@ -124,7 +124,30 @@
     border-radius: 0.5rem;
 }
 
-.skills-img-rag {
+.skills-img-flask {
+    object-fit: contain;
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+.skills-img-fastapi {
+    object-fit: contain;
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+.skills-img-postgresql {
+    object-fit: contain;
+    border-radius: 0.5rem;
+}
+
+.skills-img-claude {
+    object-fit: contain;
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+.skills-img-ollama {
     object-fit: contain;
     background-color: #fff;
     border-radius: 0.5rem;
