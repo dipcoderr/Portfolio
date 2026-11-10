@@ -2,6 +2,7 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
     column-gap: 1rem;
     justify-content: center;
+    align-items: start;
 }
 
 .skills-content {
@@ -16,17 +17,24 @@
     grid-column: span 2;
 }
 
-.languages-skills .skills-box {
+.ai-skills {
+    grid-column: span 2;
+}
+
+.languages-skills .skills-box,
+.ai-skills .skills-box {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
 }
 
-.languages-skills .skills-group {
+.languages-skills .skills-group,
+.ai-skills .skills-group {
     display: contents;
 }
 
-.languages-skills .skills-data {
+.languages-skills .skills-data,
+.ai-skills .skills-data {
     justify-content: center;
 }
 
@@ -182,16 +190,19 @@
         row-gap: 2rem;
     }
 
-    .languages-skills {
+    .languages-skills,
+    .ai-skills {
         grid-column: auto;
     }
 
-    .languages-skills .skills-box {
+    .languages-skills .skills-box,
+    .ai-skills .skills-box {
         display: flex;
         gap: 1rem;
     }
 
-    .languages-skills .skills-group {
+    .languages-skills .skills-group,
+    .ai-skills .skills-group {
         display: grid;
     }
 }

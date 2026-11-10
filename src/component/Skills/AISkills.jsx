@@ -14,7 +14,7 @@ const AISkills = () => {
     };
 
     return (
-        <Tilt className="skills-content" options={tiltOptions}>
+        <Tilt className="skills-content ai-skills" options={tiltOptions}>
             <h3 className="skills-title">AI & Machine Learning</h3>
 
             <div className="skills-box">
