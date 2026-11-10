@@ -10,7 +10,7 @@ const Languages = () => {
     };
 
     return (
-        <Tilt className="skills-content" options={tiltOptions}>
+        <Tilt className="skills-content languages-skills" options={tiltOptions}>
             <h3 className="skills-title">Languages & CS Fundamentals</h3>
 
             <div className="skills-box">
@@ -63,6 +63,13 @@ const Languages = () => {
                         <div>
                             <i className="bx bx-sitemap skills-icon system-design"></i>
                             <h3 className="skills-name">System Design</h3>
+                        </div>
+                    </div>
+
+                    <div className="skills-data">
+                        <div>
+                            <i className="bx bx-network-chart skills-icon computer-networks"></i>
+                            <h3 className="skills-name">Computer Networks</h3>
                         </div>
                     </div>
                 </div>
