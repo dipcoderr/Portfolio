@@ -38,7 +38,7 @@ const Languages = () => {
                     <div className="skills-data">
                         <div>
                             <img src={computerNetworks} alt="Computer Networks" className="skills-img" />
-                            <h3 className="skills-name">CN</h3>
+                            <h3 className="skills-name">Computer Networks</h3>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ const Languages = () => {
                     <div className="skills-data">
                         <div>
                             <img src={os} alt="Operating System" className="skills-img" />
-                            <h3 className="skills-name">OS</h3>
+                            <h3 className="skills-name">Operating System</h3>
                         </div>
                     </div>
                 </div>
