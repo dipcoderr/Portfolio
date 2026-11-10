@@ -1,5 +1,6 @@
-import React from 'react';
 import { Tilt } from "react-tilt";
+import python from "../../assets/python.png";
+import windows from "../../assets/windows.png";
 
 const Languages = () => {
     const tiltOptions = {
@@ -30,7 +31,7 @@ const Languages = () => {
 
                     <div className="skills-data">
                         <div>
-                            <i className="bx bx-desktop skills-icon os"></i>
+                            <img src={windows} alt="Windows" className="skills-img skills-img-windows" />
                             <h3 className="skills-name">Operating Systems</h3>
                         </div>
                     </div>
@@ -46,7 +47,7 @@ const Languages = () => {
 
                     <div className="skills-data">
                         <div>
-                            <i className="bx bxl-python skills-icon python"></i>
+                            <img src={python} alt="Python" className="skills-img" />
                             <h3 className="skills-name">Python</h3>
                         </div>
                     </div>
@@ -55,6 +56,13 @@ const Languages = () => {
                         <div>
                             <i className="bx bx-network-chart skills-icon ds"></i>
                             <h3 className="skills-name">Data Structures</h3>
+                        </div>
+                    </div>
+
+                    <div className="skills-data">
+                        <div>
+                            <i className="bx bx-sitemap skills-icon system-design"></i>
+                            <h3 className="skills-name">System Design</h3>
                         </div>
                     </div>
                 </div>

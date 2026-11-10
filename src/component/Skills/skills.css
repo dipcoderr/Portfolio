@@ -59,6 +59,11 @@
     object-fit: contain;
 }
 
+.skills-img-windows {
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
 .skills-img-generative-ai {
     background-color: #fff;
     border-radius: 0.5rem;
@@ -116,6 +121,10 @@
 
 .skills-icon.ds {
     color: #FF9500;
+}
+
+.skills-icon.system-design {
+    color: #2D8CFF;
 }
 
 .skills-icon.ai {
