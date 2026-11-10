@@ -19,34 +19,27 @@ export default function About() {
       <span className="section-subtitle">My Introduction</span>
 
       <div className="about-container container grid">
-        {/* <img src={photo} alt="about photo" className="about-img"/> */}
-
         <div className="about-data">
           <p className="about-description">
-            <strong>Software Engineer, AI Engineer & Forward Deployed Engineer</strong> – I’m Dipanshu
-            Kumar Mishra from Varanasi. I completed my B.Tech in Electrical
-            Engineering at NIT Agartala (2022–2026, 7.57/10 CGPA). I build
-            full-stack products with React, Node.js, Express, and MongoDB, and
-            explore generative AI, retrieval-augmented generation, and agentic
-            workflows with LangChain and LangGraph.
+            <strong>AI Engineer, Full-Stack Developer &amp; Forward Deployed Engineer</strong> — I am Dipanshu
+            Kumar Mishra from Varanasi. B.Tech in Electrical Engineering from NIT Agartala (2022–2026, CGPA: 7.57/10).
+            I architect agentic AI systems using LangChain, LangGraph, RAG, and Ollama, and ship full-stack
+            products with React, Node.js, Express, and MongoDB — bridging cutting-edge AI with production-ready deployment.
           </p>
           <p className="about-description">
-            <strong>Engineering Experience</strong> – As an SDE Intern at
-            BlueStock, I led a 10-member team building an IPO platform with
-            30+ listings, live market updates, and secure APIs; integrating
-            AWS S3 helped manage more than 100 company assets. At IIT Patna, I
-            developed a PyTorch and Attention-Gated R2U-Net pipeline for
-            satellite flood mapping, improving segmentation scores by 15% and
-            reducing preprocessing latency by 40%.
+            <strong>Engineering Experience</strong> — As an SDE Intern at BlueStock, I led a 10-member
+            team to build a full-stack IPO platform with 30+ IPO listings, live CMP updates, listing gains
+            tracking, and RHP/DRHP PDF access. Designed 10+ secure RESTful APIs with JWT, Mongoose, and
+            Multer + AWS S3 handling 100+ company assets. At IIT Patna, I orchestrated an end-to-end
+            Computer Vision pipeline using PyTorch and an Attention-Gated Residual U-Net (R2U-Net),
+            achieving 15% higher Mean IoU and cutting training latency by 40%.
           </p>
           <p className="about-description">
-            <strong>Projects & Problem Solving</strong> – My projects include
-            Aria, a multimodal AI assistant with persistent memory and 5+ tools,
-            and SLCS, a role-based civic complaint platform built for more than
-            100 simulated users. I’ve solved 1,000+ LeetCode problems (max
-            rating 1807) and reached 3-star on CodeChef (max rating 1611). I
-            also built and deployed this responsive portfolio with React and
-            Vite.
+            <strong>AI Projects &amp; Problem Solving</strong> — Built Aria, a full-stack agentic AI
+            assistant using LangGraph &amp; LangChain orchestrating 5+ tools (web search, arithmetic,
+            multimodal parsing across PDF, DOCX, CSV, TXT) with PostgreSQL persistent memory on Supabase,
+            speech-to-text, audio synthesis, and a 5MB file pipeline hosted on Render. Solved 1,000+
+            LeetCode problems (max rating 1807) and 3-star on CodeChef (max rating 1611).
           </p>
 
           <motion.a

@@ -18,13 +18,13 @@ const ExperienceCard = () => {
         <div className="experience-content">
           <h2>
             <img src={bluestockLogo} alt="BlueStock" className="company-logo" />
-            BlueStock - SDE Intern
+            BlueStock – SDE Intern
           </h2>
-          <div className="experience-duration">April 2025 - May 2025 (Remote)</div>
+          <div className="experience-duration">Apr 2025 – May 2025 &nbsp;|&nbsp; Remote</div>
           <ul>
-            <li>Led a 10-member team to develop a Full-Stack IPO Web Application using Node.js, Express, MongoDB, React, JWT, and CSS, featuring 30+ API endpoints, listing game, ranking, and real-time notifications</li>
-            <li>Designed and guided the secure RESTful APIs with JWT authentication, Mongoose models, and Multer + AWS S3 integration</li>
-            <li>Streamlined development workflows in an Agile environment, using GitHub for version control and Postman for API testing, improving feature delivery speed by 25%, and increasing admin dashboard and database efficiency</li>
+            <li>Led a 10-member team to build a full-stack IPO platform using Node.js, Express, MongoDB, React, and Tailwind CSS, featuring 30+ IPO listings, live CMP updates, listing gains tracking, and RHP/DRHP PDF access.</li>
+            <li>Designed and implemented 10+ secure RESTful APIs with JWT authentication, Mongoose schemas, and Multer + AWS S3 integration to handle 100+ company assets.</li>
+            <li>Streamlined Agile workflows using GitHub and Postman, accelerating feature delivery speed by 25% while managing admin dashboards and database structuring.</li>
           </ul>
         </div>
         <motion.a
@@ -41,7 +41,7 @@ const ExperienceCard = () => {
         </motion.a>
       </motion.div>
 
-      {/* IT Paisa Experience */}
+      {/* IIT Patna Experience */}
       <motion.div 
         className="experience-card"
         initial={{ opacity: 0, y: 50 }}
@@ -52,17 +52,13 @@ const ExperienceCard = () => {
         <div className="experience-content">
           <h2>
             <img src={iitPatnaLogo} alt="IIT Patna" className="company-logo" />
-            IIT Patna - Winter Engineering Intern
+            IIT Patna – Machine Learning Research Intern
           </h2>
-          <div className="experience-duration">October 2023 - January 2024 (Patna)</div>
+          <div className="experience-duration">Oct 2023 – Jan 2024 &nbsp;|&nbsp; Patna, Bihar</div>
           <ul>
-            <li>Contributed to the Flood Area Segmentation project involving an Attention-Gate & Recurrent-Residual
-CNN-based U-Net model, by curating and labeling over 100+ satellite images to build a precise and
-structured dataset.</li>
-            <li>Tagged and annotated 100+ satellite images using Label Studio, creating a well-structured, high-quality dataset for
-model training and validation that boosted segmentation accuracy by 15%.</li>
-            <li>Utilized Anaconda for environment setup and dependency management, reducing setup time by 40% and
-ensuring consistent deep-learning framework configuration.</li>
+            <li>Orchestrated an end-to-end Computer Vision pipeline using PyTorch and an Attention-Gated Residual U-Net (R2U-Net), training on 1.2M+ parameters for flood-water semantic segmentation across 500+ multispectral patches.</li>
+            <li>Curated and augmented 100+ high-resolution satellite rasters using Label Studio and OpenCV, boosting segmentation precision and achieving a 15% higher Mean IoU / Dice coefficient on test validation.</li>
+            <li>Optimized data preprocessing loaders and environment runtime configurations via Anaconda and CUDA, reducing training pipeline latency by 40% across 50+ test iterations.</li>
           </ul>
         </div>
         <motion.a

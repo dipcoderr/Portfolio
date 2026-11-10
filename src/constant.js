@@ -7,10 +7,11 @@ export const projects = [
         id:0,
         name:"Aria – AI Assistant",
         image:aria,
-        summary:"A multimodal AI assistant with persistent memory and agentic workflows, built with LangGraph, LangChain, Flask, and Ollama Cloud. Orchestrates 5+ tools for web search, arithmetic, and parsing PDF, DOCX, CSV, and TXT files.",
+        description: "Autonomous browser-based AI assistant with persistent memory and multimodal tool orchestration. Architected using LangGraph, LangChain, and Flask, orchestrating 5+ tools for web search, arithmetic, and multimodal parsing across 4 file formats (PDF, DOCX, CSV, TXT) via Ollama Cloud API. Encoded stateful conversation persistence using PostgreSQL checkpoints on Supabase, integrating speech-to-text, audio synthesis, and a 5MB file pipeline hosted with Gunicorn on Render.",
         gradient:["#142D46", "#2E4964"],
         GithubURL:"https://github.com/dipcoderr/aria-assistant",
-        tech:["python","flask","langchain","langgraph","postgresql"]
+        LiveURL:"#",
+        tech:["python","flask","langchain","langgraph","postgresql","supabase"]
     },
     {
         id:1,
@@ -26,7 +27,7 @@ export const projects = [
         id:2,
         name:"SLCS",
         image:slcs,
-        description: "Role-based complaint management system using Node.js, Express.js, MongoDB, and Mongoose, enabling 100+ simulated users to register, authenticate via JWT, and submit civic complaints with real-time status tracking. Architected 10+ secure RESTful APIs with authentication, authorization middleware, and Admin/User role separation. Integrated image uploads via Multer and Cloudinary, optimized database schemas, and reduced manual complaint tracking by 40%.",
+        description: "Role-based civic complaint management platform using Node.js, Express.js, MongoDB, and Mongoose. Developed a MERN-stack complaint lifecycle platform supporting secure authentication and real-time status tracking for 100+ simulated users. Pioneered 10+ RESTful APIs featuring JWT authentication, bcrypt hashing, role-based access control (RBAC), and multipart uploads with Multer and MongoDB. Deployed on Render.",
         gradient:["#142D46", "#2E4964"],
         GithubURL:"https://github.com/dipcoderr/SLCS_codebase",
         LiveURL:"https://street-light-complaint-system-o7do.onrender.com",

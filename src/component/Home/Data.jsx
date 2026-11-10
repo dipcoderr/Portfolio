@@ -58,14 +58,13 @@ export default function Data() {
         </svg>
       </h1>
       <h3 className="home-subtitle">
-        FULL-STACK DEVELOPER • SOFTWARE ENGINEER
+        AI ENGINEER • FULL-STACK DEVELOPER • FORWARD DEPLOYED ENGINEER
       </h3>
       <p className="home-description">
-        B.Tech graduate from NIT Agartala, building scalable web applications
-        with the MERN stack, secure REST APIs, and cloud integrations. Former
-        SDE Intern at BlueStock and Research Intern at IIT Patna. Competitive
-        programmer: LeetCode 1807 | CodeChef 3★ (1611) | Codeforces Pupil
-        (1322).
+        B.Tech from NIT Agartala. I build agentic AI systems with LangChain,
+        LangGraph &amp; RAG, and ship full-stack products on the MERN stack.
+        Former SDE Intern at BlueStock &amp; ML Research Intern at IIT Patna.
+        LeetCode 1807 | CodeChef 3★ (1611).
       </p>
 
       <motion.a
