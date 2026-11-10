@@ -99,6 +99,8 @@
     font-weight: var(--font-medium);
     line-height: 18px;
     text-align: center;
+    white-space: nowrap;
+    font-size: 0.7rem;
 }
 
 .skills-img {
