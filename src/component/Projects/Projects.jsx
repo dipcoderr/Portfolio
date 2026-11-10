@@ -35,9 +35,13 @@ export default function Projects() {
       <h2 className="section-title">Projects</h2>
       <span className="section-subtitle">Some Projects I made</span>
       <div className="tilt-cards-container" ref={ref}>
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project}/>
-        ))}
+        {projects.map((project, index) => {
+          const isOdd = projects.length % 2 !== 0;
+          const isCenterCard = isOdd && index === Math.floor(projects.length / 2);
+          return (
+            <ProjectCard key={project.id} project={project} centered={isCenterCard}/>
+          );
+        })}
       </div>
     </section>
   );

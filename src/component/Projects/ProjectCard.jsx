@@ -1,19 +1,21 @@
 import React from 'react'
 import { Tilt } from "react-tilt";
 
-const ProjectCard = ({project}) => {
+const ProjectCard = ({project, centered}) => {
     const tiltOptions = {
         max: 45,
         scale: 1,
         speed: 750,
       };
 
+  const hasImage = !!project.image;
+  const hasLogo  = !!project.logo;
+
   return (
     <Tilt
-            // key={project.id}
-            className="tilt-card"
+            className={`tilt-card${centered ? ' tilt-card--centered' : ''}`}
             style={{
-              backgroundImage: project.image
+              backgroundImage: hasImage
                 ? `url(${project.image})`
                 : `linear-gradient(135deg, ${project.gradient[0]}, ${project.gradient[1]})`,
               backgroundSize: "cover",
@@ -22,8 +24,13 @@ const ProjectCard = ({project}) => {
             options={tiltOptions}
           >
             <div className="tilt-card-content">
+              {/* Logo badge for AI/no-image cards */}
+              {hasLogo && (
+                <div className="tilt-card-logo-wrap">
+                  <img src={project.logo} alt={`${project.name} logo`} className="tilt-card-logo" />
+                </div>
+              )}
               <h2>{project.name}</h2>
-              {project.summary && <p className="project-summary">{project.summary}</p>}
               <div className="button-container">
                 {project.GithubURL && (
                   <button className="custom-button">

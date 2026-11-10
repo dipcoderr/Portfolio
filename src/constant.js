@@ -1,12 +1,13 @@
 import redgold from "./assets/redgold.png"
 import slcs from "./assets/slcs.png"
-import aria from "./assets/aria.png"
+import ariaLogo from "./assets/aria-logo.svg"
 
 export const projects = [
     {
         id:0,
         name:"Aria – AI Assistant",
-        image:aria,
+        image:null,
+        logo:ariaLogo,
         description: "Autonomous browser-based AI assistant with persistent memory and multimodal tool orchestration. Architected using LangGraph, LangChain, and Flask, orchestrating 5+ tools for web search, arithmetic, and multimodal parsing across 4 file formats (PDF, DOCX, CSV, TXT) via Ollama Cloud API. Encoded stateful conversation persistence using PostgreSQL checkpoints on Supabase, integrating speech-to-text, audio synthesis, and a 5MB file pipeline hosted with Gunicorn on Render.",
         gradient:["#142D46", "#2E4964"],
         GithubURL:"https://github.com/dipcoderr/aria-assistant",
