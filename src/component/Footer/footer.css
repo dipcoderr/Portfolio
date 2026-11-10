@@ -60,9 +60,11 @@
     color: #fff;
 }
 
-.footer-social-link .social-icon-img {
+.footer-social-link .social-icon-img,
+.footer-social-link .footer-social-img {
     width: 18px;
     height: 18px;
+    object-fit: contain;
 }
 
 .footer-copy {
