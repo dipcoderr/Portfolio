@@ -25,9 +25,14 @@
     grid-column: span 2;
 }
 
+.frontend-skills {
+    grid-column: span 2;
+}
+
 .languages-skills .skills-box,
 .ai-skills .skills-box,
-.backend-skills .skills-box {
+.backend-skills .skills-box,
+.frontend-skills .skills-box {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
@@ -35,20 +40,23 @@
 
 .languages-skills .skills-group,
 .ai-skills .skills-group,
-.backend-skills .skills-group {
+.backend-skills .skills-group,
+.frontend-skills .skills-group {
     display: contents;
 }
 
 .languages-skills .skills-data,
 .ai-skills .skills-data,
-.backend-skills .skills-data {
+.backend-skills .skills-data,
+.frontend-skills .skills-data {
     justify-content: center;
     align-items: flex-start;
 }
 
 .languages-skills .skills-data>div,
 .ai-skills .skills-data>div,
-.backend-skills .skills-data>div {
+.backend-skills .skills-data>div,
+.frontend-skills .skills-data>div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,6 +137,12 @@
 .skills-img-agents {
     width: 64px;
     height: 50px;
+    border-radius: 0.5rem;
+}
+
+.skills-img-nextjs {
+    object-fit: contain;
+    background-color: #fff;
     border-radius: 0.5rem;
 }
 
@@ -236,20 +250,23 @@
 
     .languages-skills,
     .ai-skills,
-    .backend-skills {
+    .backend-skills,
+    .frontend-skills {
         grid-column: auto;
     }
 
     .languages-skills .skills-box,
     .ai-skills .skills-box,
-    .backend-skills .skills-box {
+    .backend-skills .skills-box,
+    .frontend-skills .skills-box {
         display: flex;
         gap: 1rem;
     }
 
     .languages-skills .skills-group,
     .ai-skills .skills-group,
-    .backend-skills .skills-group {
+    .backend-skills .skills-group,
+    .frontend-skills .skills-group {
         display: grid;
     }
 }
