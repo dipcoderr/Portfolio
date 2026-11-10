@@ -13,7 +13,9 @@ const ProjectCard = ({project}) => {
             // key={project.id}
             className="tilt-card"
             style={{
-              backgroundImage: `url(${project.image})`,
+              backgroundImage: project.image
+                ? `url(${project.image})`
+                : `linear-gradient(135deg, ${project.gradient[0]}, ${project.gradient[1]})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -21,21 +23,22 @@ const ProjectCard = ({project}) => {
           >
             <div className="tilt-card-content">
               <h2>{project.name}</h2>
+              {project.summary && <p className="project-summary">{project.summary}</p>}
               <div className="button-container">
-                <button className="custom-button">
-                  <a href={project.GithubURL} target="_blank" rel="noreferrer">
-                    Github
-                  </a>
-                </button>
-                <button className="custom-button">
-                  <a
-                    href={project.LiveURL}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Demo
-                  </a>
-                </button>
+                {project.GithubURL && (
+                  <button className="custom-button">
+                    <a href={project.GithubURL} target="_blank" rel="noreferrer">
+                      Github
+                    </a>
+                  </button>
+                )}
+                {project.LiveURL && (
+                  <button className="custom-button">
+                    <a href={project.LiveURL} target="_blank" rel="noreferrer">
+                      Demo
+                    </a>
+                  </button>
+                )}
               </div>
             </div>
           </Tilt>

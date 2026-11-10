@@ -1,6 +1,6 @@
 .skills-container {
-    grid-template-columns: repeat(3, 320px);
-    column-gap: 1.5rem;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 1rem;
     justify-content: center;
 }
 
@@ -86,6 +86,10 @@
     color: #FF9500;
 }
 
+.skills-icon.ai {
+    color: #9B59B6;
+}
+
 .skills-icon:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
@@ -95,9 +99,16 @@
     font-size: var(--tiny-font-size);
 }
 
-@media screen and (max-width:1400px) {
+@media screen and (min-width:1201px) {
     .skills-container {
-        grid-template-columns: repeat(3, 280px);
+        column-gap: 0.75rem;
+    }
+
+    .skills-content {
+        padding: 1.5rem 1rem;
+    }
+
+    .skills-box {
         column-gap: 1rem;
     }
 }

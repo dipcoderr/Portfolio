@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import "../About/about.css";
 import resume from "../../assets/dipanshu_mishra_resume.pdf";
@@ -24,24 +23,30 @@ export default function About() {
 
         <div className="about-data">
           <p className="about-description">
-            <strong>Full-Stack Developer & Software Engineer</strong> – I’m
-            Dipanshu Kumar Mishra, a B.Tech graduate from NIT Agartala with
-            hands-on experience in building scalable web products using the MERN
-            stack. I work with React, Node.js, Express, MongoDB, REST APIs, JWT
-            authentication, and cloud services like AWS S3 and Cloudinary to
-            build secure, user-focused applications. My internship experience
-            includes leading the development of an IPO platform at BlueStock and
-            contributing to a deep-learning flood mapping project at IIT Patna.
+            <strong>Software Engineer, AI Engineer & Forward Deployed Engineer</strong> – I’m Dipanshu
+            Kumar Mishra from Varanasi. I completed my B.Tech in Electrical
+            Engineering at NIT Agartala (2022–2026, 7.57/10 CGPA). I build
+            full-stack products with React, Node.js, Express, and MongoDB, and
+            explore generative AI, retrieval-augmented generation, and agentic
+            workflows with LangChain and LangGraph.
           </p>
           <p className="about-description">
-            <strong>Problem Solver & Builder</strong> – Beyond web development,
-            I’m an active competitive programmer with 1000+ problems solved on
-            LeetCode, a 3-star CodeChef profile, and a Pupil rating on
-            Codeforces. I enjoy solving real-world engineering problems through
-            clean architecture, strong data structures fundamentals, and
-            practical product thinking. My projects include Redgold and SLCS,
-            both focused on efficient, secure, and impactful digital
-            experiences.
+            <strong>Engineering Experience</strong> – As an SDE Intern at
+            BlueStock, I led a 10-member team building an IPO platform with
+            30+ listings, live market updates, and secure APIs; integrating
+            AWS S3 helped manage more than 100 company assets. At IIT Patna, I
+            developed a PyTorch and Attention-Gated R2U-Net pipeline for
+            satellite flood mapping, improving segmentation scores by 15% and
+            reducing preprocessing latency by 40%.
+          </p>
+          <p className="about-description">
+            <strong>Projects & Problem Solving</strong> – My projects include
+            Aria, a multimodal AI assistant with persistent memory and 5+ tools,
+            and SLCS, a role-based civic complaint platform built for more than
+            100 simulated users. I’ve solved 1,000+ LeetCode problems (max
+            rating 1807) and reached 3-star on CodeChef (max rating 1611). I
+            also built and deployed this responsive portfolio with React and
+            Vite.
           </p>
 
           <motion.a

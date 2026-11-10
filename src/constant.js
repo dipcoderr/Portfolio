@@ -1,7 +1,17 @@
 import redgold from "./assets/redgold.png"
 import slcs from "./assets/slcs.png"
+import aria from "./assets/aria.png"
 
 export const projects = [
+    {
+        id:0,
+        name:"Aria – AI Assistant",
+        image:aria,
+        summary:"A multimodal AI assistant with persistent memory and agentic workflows, built with LangGraph, LangChain, Flask, and Ollama Cloud. Orchestrates 5+ tools for web search, arithmetic, and parsing PDF, DOCX, CSV, and TXT files.",
+        gradient:["#142D46", "#2E4964"],
+        GithubURL:"https://github.com/dipcoderr/aria-assistant",
+        tech:["python","flask","langchain","langgraph","postgresql"]
+    },
     {
         id:1,
         name:"Redgold",

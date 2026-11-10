@@ -3,6 +3,7 @@ import "../Skills/skills.css"
 import Backend from "./Backend";
 import Frontend from "./Frontend";
 import Languages from "./Languages";
+import AISkills from "./AISkills";
 
 export default function Skills() {
 return (
@@ -16,6 +17,8 @@ return (
             <Backend/>
 
             <Languages/>
+
+            <AISkills/>
         </div>
     </section>
 )
